@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cargar Encuentro | Sistema de Gestión de Fixtures</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="encabezado-sitio">
+    <div class="contenedor">
+      <span class="pretitulo">Torneo 2026 — Administración</span>
+      <h1>Cargar un nuevo encuentro</h1>
+      <p>Completá los datos del cruce para incorporarlo a la agenda general del fixture.</p>
+    </div>
+  </header>
+
+  <nav class="nav-principal">
+    <div class="contenedor">
+      <ul>
+        <li><a href="index.html">Panel de control</a></li>
+        <li><a href="alta-fixture.html" aria-current="page">Cargar encuentro</a></li>
+        <li><a href="ver-fixture.html">Ver fixture</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="contenedor">
+
+      <section id="formulario-alta">
+        <div class="encabezado-seccion">
+          <span class="pretitulo">Formulario</span>
+          <h2>Datos del encuentro</h2>
+        </div>
+
+        <form class="formulario-fixture" action="#" method="GET" autocomplete="off">
+
+          <div class="grupo-campos">
+            <div class="campo">
+              <label for="equipo-local">Equipo local</label>
+              <select id="equipo-local" name="equipo_local" required>
+                <option value="" disabled selected>Seleccioná un equipo</option>
+                <option value="halcones">Los Halcones</option>
+                <option value="estrella-sur">Estrella del Sur</option>
+                <option value="atletico-rivera">Atlético Rivera</option>
+                <option value="union-deportiva">Unión Deportiva</option>
+                <option value="club-norte">Club Norte</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label for="equipo-visitante">Equipo visitante</label>
+              <select id="equipo-visitante" name="equipo_visitante" required>
+                <option value="" disabled selected>Seleccioná un equipo</option>
+                <option value="halcones">Los Halcones</option>
+                <option value="estrella-sur">Estrella del Sur</option>
+                <option value="atletico-rivera">Atlético Rivera</option>
+                <option value="union-deportiva">Unión Deportiva</option>
+                <option value="club-norte">Club Norte</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label for="fecha">Fecha</label>
+              <input type="date" id="fecha" name="fecha" required>
+            </div>
+
+            <div class="campo">
+              <label for="hora">Hora</label>
+              <input type="time" id="hora" name="hora" required>
+            </div>
+
+            <div class="campo campo-ancho">
+              <label for="sede">Sede / cancha</label>
+              <input
+                type="text"
+                id="sede"
+                name="sede"
+                placeholder="Ej: Cancha Central, Polideportivo Municipal"
+                autocomplete="off"
+                required
+              >
+            </div>
+
+            <div class="campo campo-ancho">
+              <span class="etiqueta-grupo">Instancia del torneo</span>
+              <div class="opciones-radio">
+                <label class="opcion-radio" for="instancia-grupos">
+                  <input type="radio" id="instancia-grupos" name="instancia" value="fase-grupos" required>
+                  Fase de Grupos
+                </label>
+                <label class="opcion-radio" for="instancia-cuartos">
+                  <input type="radio" id="instancia-cuartos" name="instancia" value="cuartos-final">
+                  Cuartos de Final
+                </label>
+                <label class="opcion-radio" for="instancia-semifinal">
+                  <input type="radio" id="instancia-semifinal" name="instancia" value="semifinal">
+                  Semifinal
+                </label>
+                <label class="opcion-radio" for="instancia-final">
+                  <input type="radio" id="instancia-final" name="instancia" value="final">
+                  Final
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="acciones-formulario">
+            <input type="reset" value="Restablecer formulario" class="boton boton-secundario">
+            <input type="submit" value="Registrar encuentro" class="boton boton-principal">
+          </div>
+
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="pie-sitio">
+    <div class="contenedor">
+      <p>Sistema de Gestión de Fixtures — Laboratorio de Programación, 6° G</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Panel de control</a></li>
+          <li><a href="alta-fixture.html">Cargar encuentro</a></li>
+          <li><a href="ver-fixture.html">Ver fixture</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

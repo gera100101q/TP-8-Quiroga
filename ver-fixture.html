@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ver Fixture | Sistema de Gestión de Fixtures</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="encabezado-sitio">
+    <div class="contenedor">
+      <span class="pretitulo">Torneo 2026 — Agenda</span>
+      <h1>Fixture general</h1>
+      <p>La grilla completa de encuentros de la temporada, ordenada por fecha.</p>
+    </div>
+  </header>
+
+  <nav class="nav-principal">
+    <div class="contenedor">
+      <ul>
+        <li><a href="index.html">Panel de control</a></li>
+        <li><a href="alta-fixture.html">Cargar encuentro</a></li>
+        <li><a href="ver-fixture.html" aria-current="page">Ver fixture</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="contenedor layout-visualizador">
+
+      <section id="tabla-partidos">
+        <table class="tabla-fixture">
+          <caption>Agenda de encuentros — temporada 2026</caption>
+          <thead>
+            <tr>
+              <th scope="col">Fecha</th>
+              <th scope="col">Encuentro</th>
+              <th scope="col">Horario</th>
+              <th scope="col">Sede</th>
+              <th scope="col">Instancia</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>07/06/2026</td>
+              <td>Los Halcones vs. Estrella del Sur</td>
+              <td>15:00 hs</td>
+              <td>Cancha Central</td>
+              <td><span class="instancia-tag">Fase de Grupos</span></td>
+            </tr>
+            <tr>
+              <td>08/06/2026</td>
+              <td>Atlético Rivera vs. Unión Deportiva</td>
+              <td>17:30 hs</td>
+              <td>Polideportivo Municipal</td>
+              <td><span class="instancia-tag">Fase de Grupos</span></td>
+            </tr>
+            <tr>
+              <td>14/06/2026</td>
+              <td>Club Norte vs. Los Halcones</td>
+              <td>16:00 hs</td>
+              <td>Cancha Central</td>
+              <td><span class="instancia-tag">Cuartos de Final</span></td>
+            </tr>
+            <tr>
+              <td>15/06/2026</td>
+              <td>Estrella del Sur vs. Unión Deportiva</td>
+              <td>18:00 hs</td>
+              <td>Polideportivo Municipal</td>
+              <td><span class="instancia-tag">Cuartos de Final</span></td>
+            </tr>
+            <tr>
+              <td>21/06/2026</td>
+              <td>Ganador Cruce 1 vs. Ganador Cruce 2</td>
+              <td>17:00 hs</td>
+              <td>Cancha Central</td>
+              <td><span class="instancia-tag">Semifinal</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <aside>
+        <h2>Información complementaria</h2>
+
+        <div class="bloque-aside">
+          <h3>Reglamento breve</h3>
+          <ul>
+            <li>Cada equipo debe presentarse 15 minutos antes del horario pautado.</li>
+            <li>Los partidos de fase de grupos se definen a dos tiempos de 25 minutos.</li>
+            <li>En caso de empate en instancias eliminatorias, se define por penales.</li>
+          </ul>
+        </div>
+
+        <div class="bloque-aside">
+          <h3>Tabla de posiciones rápida</h3>
+          <ol>
+            <li>Los Halcones — 9 pts.</li>
+            <li>Atlético Rivera — 7 pts.</li>
+            <li>Estrella del Sur — 6 pts.</li>
+            <li>Unión Deportiva — 4 pts.</li>
+            <li>Club Norte — 3 pts.</li>
+          </ol>
+        </div>
+
+        <div class="bloque-aside">
+          <h3>Avisos institucionales</h3>
+          <ul>
+            <li>Recordá confirmar asistencia con 48 hs de anticipación.</li>
+            <li>Cambios de sede se comunican únicamente por este panel.</li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer class="pie-sitio">
+    <div class="contenedor">
+      <p>Sistema de Gestión de Fixtures — Laboratorio de Programación, 6° G</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Panel de control</a></li>
+          <li><a href="alta-fixture.html">Cargar encuentro</a></li>
+          <li><a href="ver-fixture.html">Ver fixture</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
